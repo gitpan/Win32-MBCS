@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use base qw(Exporter);
 use vars qw($VERSION @EXPORT @EXPORT_OK);
-$VERSION = "0.05";
+$VERSION = "0.06";
 @EXPORT = qw();
 @EXPORT_OK = qw(Utf8ToLocal LocalToUtf8);
 
@@ -37,8 +37,8 @@ Convert utf8 strings to or from win32 local multi-byte string.
 =head1 BUGS, REQUESTS, COMMENTS
 
 Please report any requests, suggestions or bugs via
-http://bookbot.sourceforge.net/
-http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Win32-MBCS
+L<http://bookbot.sourceforge.net/>
+L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Win32-MBCS>
 
 =head1 COPYRIGHT AND LICENSE
 

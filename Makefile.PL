@@ -1,5 +1,9 @@
-use 5.008;
+require 5.008;
 use ExtUtils::MakeMaker;
+
+die "Win32::MBCS is only for win32 platform, not for $^O\n"
+	if $^O ne "MSWin32";
+
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 WriteMakefile(
