@@ -1,0 +1,8 @@
+Changes
+Makefile.PL
+MANIFEST
+MBCS.xs
+README
+MBCS.pm
+t/Win32-MBCS.t
+META.yml                                 Module meta-data (added by MakeMaker)

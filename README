@@ -1,0 +1,33 @@
+Win32-MBCS version 0.01
+=======================
+
+NAME
+    Win32::MBCS - Utf8 to win32 local multi-byte string conversion
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+SYNOPSIS
+      use Win32::MBCS;
+      $utf8="abcd\x{4e2d}\x{6587}";
+      Utf8ToLocal($t);
+      print $utf8;
+
+DESCRIPTION
+    Convert utf8 strings to win32 local multi-byte string conversion.
+
+EXPORT
+    None by default.
+
+BUGS, REQUESTS, COMMENTS
+    Please report any requests, suggestions or bugs via
+    http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Win32-MBCS
+
+AUTHOR
+    Qing-Jie Zhou <qjzhou@hotmail.com>
