@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use base qw(Exporter);
 use vars qw($VERSION @EXPORT @EXPORT_OK);
-$VERSION = "0.04";
+$VERSION = "0.05";
 @EXPORT = qw();
 @EXPORT_OK = qw(Utf8ToLocal LocalToUtf8);
 
@@ -34,17 +34,17 @@ Win32::MBCS - Utf8 and win32 local multi-byte string conversion
 
 Convert utf8 strings to or from win32 local multi-byte string.
 
-=head2 EXPORT
-
-None by default.
-
 =head1 BUGS, REQUESTS, COMMENTS
 
 Please report any requests, suggestions or bugs via
+http://bookbot.sourceforge.net/
 http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Win32-MBCS
 
-=head1 AUTHOR
+=head1 COPYRIGHT AND LICENSE
 
-Qing-Jie Zhou E<lt>qjzhou@hotmail.comE<gt>
+Copyright 2003-2004 Qing-Jie Zhou E<lt>qjzhou@hotmail.comE<gt>
+
+This library is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
 
 =cut

@@ -1,6 +1,7 @@
 MBCS.xs             C code
 MBCS.pm             Module
-t/Win32-MBCS.t      Test file
+proj.kpf            Komodo project file
+t/00base.t          Test file
 Changes             Changlog
 Makefile.PL         Generate Makefile
 MANIFEST            This file

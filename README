@@ -1,8 +1,8 @@
-Win32-MBCS version 0.04
+Win32-MBCS version 0.05
 =======================
 
 NAME
-    Win32::MBCS - Utf8 and win32 local multi-byte string conversion
+   Win32::MBCS - Utf8 and win32 local multi-byte string conversion
 
 INSTALLATION
 
@@ -26,12 +26,13 @@ SYNOPSIS
 DESCRIPTION
     Convert utf8 strings to or from win32 local multi-byte string.
 
-EXPORT
-    None by default.
-
 BUGS, REQUESTS, COMMENTS
     Please report any requests, suggestions or bugs via
+    http://bookbot.sourceforge.net/
     http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Win32-MBCS
 
-AUTHOR
-    Qing-Jie Zhou <qjzhou@hotmail.com>
+COPYRIGHT AND LICENSE
+    Copyright 2003-2004 Qing-Jie Zhou <qjzhou@hotmail.com>
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
