@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use base qw(Exporter);
 use vars qw($VERSION @EXPORT @EXPORT_OK);
-$VERSION = "0.03";
+$VERSION = "0.04";
 @EXPORT = qw();
 @EXPORT_OK = qw(Utf8ToLocal LocalToUtf8);
 
