@@ -5,9 +5,9 @@ use strict;
 use warnings;
 use base qw(Exporter);
 use vars qw($VERSION @EXPORT @EXPORT_OK);
-$VERSION = "0.02";
+$VERSION = "0.03";
 @EXPORT = qw();
-@EXPORT_OK = @EXPORT;
+@EXPORT_OK = qw(Utf8ToLocal LocalToUtf8);
 
 require XSLoader;
 XSLoader::load('Win32::MBCS', $VERSION);
@@ -17,18 +17,22 @@ __END__
 
 =head1 NAME
 
-Win32::MBCS - Utf8 to win32 local multi-byte string conversion
+Win32::MBCS - Utf8 and win32 local multi-byte string conversion
 
 =head1 SYNOPSIS
 
-  use Win32::MBCS;
-  $utf8="abcd\x{4e2d}\x{6587}";
-  Win32::MBCS::Utf8ToLocal($t);
-  print $utf8;
+  use Win32::MBCS qw(Utf8ToLocal LocalToUtf8);
+  $data = "abcd\x{4e2d}\x{6587}";
+  Utf8ToLocal( $data );
+  print $data;
+
+  LocalToUtf8( $data );
+  use Encode;
+  print Encode::encode( "gbk", $data );
 
 =head1 DESCRIPTION
 
-Convert utf8 strings to win32 local multi-byte string conversion.
+Convert utf8 strings to or from win32 local multi-byte string.
 
 =head2 EXPORT
 
