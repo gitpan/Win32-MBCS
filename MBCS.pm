@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use base qw(Exporter);
 use vars qw($VERSION @EXPORT @EXPORT_OK);
-$VERSION = "0.01";
+$VERSION = "0.02";
 @EXPORT = qw();
 @EXPORT_OK = @EXPORT;
 
@@ -23,7 +23,7 @@ Win32::MBCS - Utf8 to win32 local multi-byte string conversion
 
   use Win32::MBCS;
   $utf8="abcd\x{4e2d}\x{6587}";
-  Utf8ToLocal($t);
+  Win32::MBCS::Utf8ToLocal($t);
   print $utf8;
 
 =head1 DESCRIPTION

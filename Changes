@@ -4,3 +4,5 @@ Revision history for Perl extension Win32::MBCS.
 	- original version; created by h2xs 1.23 with options
 		-cfn Win32::MBCS
 
+0.02  Fri Nov 14 18:50:47 2003
+	- Correct wrong description in document
